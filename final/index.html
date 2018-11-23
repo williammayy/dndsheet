@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gaming Sheet</title>
+    <script src="scripts/store.js"></script>
+    <script src="scripts/todo.js"></script>
+    <script defer src="scripts/app.js"></script>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                D&D Gaming Sheet
+            </h1>
+            <p class="subtitle">
+                Ficha para personagens de D&D
+            </p>
+            <div class="row">
+                <div class="col col-6">
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder='Nome do personagem'>
+                </div>
+                    <div class="form-group col-3">
+                        <select class="custom-select" id="classe" name="classe" class="form-control">
+                            <option selected="">Classe do Personagem</option>
+                            <option value="Bárbaro">Bárbaro</option>
+                            <option value="Bardo">Bardo</option>
+                            <option value="Bruxo">Bruxo</option>
+                            <option value="Clérigo">Clérigo</option>
+                            <option value="Druida">Druida</option>
+                            <option value="Feiticeiro">Feiticeiro</option>
+                            <option value="Guerreiro">Guerreiro</option>
+                            <option value="Ladino">Ladino</option>
+                            <option value="Mago">Mago</option>
+                            <option value="Monge">Monge</option>
+                            <option value="Paladino">Paladino</option>
+                            <option value="Patrulheiro">Patrulheiro</option>
+                        </select>
+                </div>
+                <div class="form-group col-3">
+                    <select class="custom-select" id="raca" name="raca" class="form-control">
+                        <option selected="">Raça do Personagem</option>
+                        <option value="Anão da Colina">Anão da Colina</option>
+                        <option value="Anão da Montanha">Anão da Montanha</option>
+                        <option value="Alto Elfo">Alto Elfo</option>
+                        <option value="Elfo da Floresta">Elfo da Floresta</option>
+                        <option value="Elfo Negro">Elfo Negro</option>
+                        <option value="Humano">Humano</option>
+                        <option value="Halfling Pés-Ligeiros">Halfling Pés-Ligeiros</option>
+                        <option value="Halfling Robusto">Halfling Robusto</option>
+                        <option value="Gnomo da Rocha">Gnomo da Rocha</option>
+                        <option value="Gnomo da Floresta">Gnomo da Floresta</option>
+                        <option value="Meio-Elfo">Meio-Elfo</option>
+                        <option value="Draconato">Draconato</option>
+                        <option value="Meio-Orc">Meio-Orc</option>
+                        <option value="Tiefling">Tiefling</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-2">
+                    <input type="number" id="nivel" name="nivel" class="form-control" placeholder='Nível'>
+                </div>
+                <div class="form-group col-2">
+                    <input type="number" id="hp" name="hp" class="form-control" placeholder='HP'>
+                </div>
+                <div class="form-group col-2">
+                    <input type="number" id="ca" name="ca" class="form-control" placeholder='CA'>
+                </div>
+                <div class="col col-6">
+                        <input type="text" id="subclasse" name="subclasse" class="form-control" placeholder='Subclasse ou Arquétipo'>
+                    </div>
+            </div>
+            <br>
+        <div class="row">
+            <div class="form-group  col-2">
+                    <label for="armas">Atributos</label>
+            <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text score-form">Força</span>
+                </div>
+                <input type="text" id="forca" name="forca" class="form-control text-right" placeholder='0'>
+            </div>
+            <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text score-form">Destreza</span>
+                </div>
+                <input type="text" id="destreza" name="destreza" class="form-control text-right" placeholder='0'>
+            </div>
+            <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text score-form">Constituição</span>
+                </div>
+                <input type="text" id="constituicao" name="constituicao" class="form-control text-right" placeholder='0'>
+            </div>
+            <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text score-form">Inteligência</span>
+                </div>
+                <input type="text" id="inteligencia" name="inteligencia" class="form-control text-right" placeholder='0'>
+            </div>
+            <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text score-form">Sabedoria</span>
+                </div>
+                <input type="text" id="sabedoria" name="sabedoria" class="form-control text-right" placeholder='0'>
+            </div>
+            <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text score-form">Carisma</span>
+                </div>
+                <input type="text" id="carisma" name="carisma" class="form-control text-right" placeholder='0'>
+            </div>
+        </div>
+            <div class="form-group col-5">
+                    <label for="habilidades">Habilidades</label>
+                <textarea class="form-control" name="habilidades" id="habilidades" rows="10" placeholder="Habilidades"></textarea>
+            </div>
+            <div class="form-group col-5">
+                    <label for="armas">Armas</label>
+                <textarea class="form-control" name="armas" id="armas" rows="10" placeholder="Armas"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-12">
+                <div class="align-content-center">
+                    <label for="armas">Magias</label>
+                    <textarea class="form-control" name="magias" id="magias" rows="10" placeholder="Magias"></textarea>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-primary" id="salvar">Salvar</a>
+            <br>
+            <div id="lista">
+
+            </div>
+            <br>
+            <div class="container" id="itensRenderizados">
+                <!-- Auto rendered itens -->
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+#lista ul {
+  list-style-type: disclosure-closed;
+  padding-left: 25px;
+}
+
+#lista span {
+  margin-right: 15px;
+}
+
+#lista ul button {
+  margin: 10px 5px;
+  padding: 0px;
+  background-color: none;
+  color: blue;
+}
+
+#lista img {
+  height: 15px;
+}
+
+.score-form {
+  min-width:110px;
+  text-align:left;
+}
+
+#armas {
+  min-height: 100px;
+  max-height: 300px;
+}
+
+#habilidades {
+  min-height: 100px;
+  max-height: 300px;
+}
+
+#magias {
+  min-height: 30%;
+  max-height: 30%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.align-content-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
