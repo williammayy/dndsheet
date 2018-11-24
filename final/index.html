@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gaming Sheet</title>
     <script src="https://asagod.github.io/dndsheet/final/scripts/store.js"></script>
@@ -24,10 +24,10 @@
                 Ficha para personagens de D&D
             </p>
             <div class="row">
-                <div class="col col-6">
+                <div class="col col-xs-12 col-md-6">
                     <input type="text" id="nome" name="nome" class="form-control" placeholder='Nome do personagem'>
                 </div>
-                    <div class="form-group col-3">
+                    <div class="form-group col-xs-5 col-md-3">
                         <select class="custom-select" id="classe" name="classe" class="form-control">
                             <option selected="">Classe do Personagem</option>
                             <option value="Bárbaro">Bárbaro</option>
@@ -44,7 +44,7 @@
                             <option value="Patrulheiro">Patrulheiro</option>
                         </select>
                 </div>
-                <div class="form-group col-3">
+                <div class="form-group col-xs-5 col-md-3">
                     <select class="custom-select" id="raca" name="raca" class="form-control">
                         <option selected="">Raça do Personagem</option>
                         <option value="Anão da Colina">Anão da Colina</option>
@@ -66,22 +66,22 @@
             </div>
             <br>
             <div class="row">
-                <div class="form-group col-2">
+                <div class="form-group col-xs-5 col-md-2">
                     <input type="number" id="nivel" name="nivel" class="form-control" placeholder='Nível'>
                 </div>
-                <div class="form-group col-2">
+                <div class="form-group col-xs-5 col-md-2">
                     <input type="number" id="hp" name="hp" class="form-control" placeholder='HP'>
                 </div>
-                <div class="form-group col-2">
+                <div class="form-group col-xs-5 col-md-2">
                     <input type="number" id="ca" name="ca" class="form-control" placeholder='CA'>
                 </div>
-                <div class="col col-6">
+                <div class="col col-xs-5 col-md-6">
                         <input type="text" id="subclasse" name="subclasse" class="form-control" placeholder='Subclasse ou Arquétipo'>
                     </div>
             </div>
             <br>
         <div class="row">
-            <div class="form-group  col-2">
+            <div class="form-group  col-xs-12 col-md-2">
                     <label for="armas">Atributos</label>
             <div class="input-group mb-1">
                 <div class="input-group-prepend">
@@ -120,17 +120,17 @@
                 <input type="text" id="carisma" name="carisma" class="form-control text-right" placeholder='0'>
             </div>
         </div>
-            <div class="form-group col-5">
+            <div class="form-group col-xs-12 col-md-5">
                     <label for="habilidades">Habilidades</label>
                 <textarea class="form-control" name="habilidades" id="habilidades" rows="10" placeholder="Habilidades"></textarea>
             </div>
-            <div class="form-group col-5">
+            <div class="form-group col-xs-12 col-md-5">
                     <label for="armas">Armas</label>
                 <textarea class="form-control" name="armas" id="armas" rows="10" placeholder="Armas"></textarea>
             </div>
         </div>
         <div class="row">
-            <div class="form-group col-12">
+            <div class="form-group col-xs-12 col-md-12">
                 <div class="align-content-center">
                     <label for="armas">Magias</label>
                     <textarea class="form-control" name="magias" id="magias" rows="10" placeholder="Magias"></textarea>
