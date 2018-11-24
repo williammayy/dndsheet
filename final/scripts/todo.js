@@ -44,7 +44,7 @@ class Todo extends Store {
                     </div>
                     <li class="list-group-item">
                     <div class="row">
-            <div class="form-group  col-3">
+            <div class="form-group  col-xs-6 col-md-3">
                     <label for="armas">Atributos</label>
             <div class="input-group mb-1">
                 <div class="input-group-prepend">
